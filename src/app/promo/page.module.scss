@@ -1,0 +1,93 @@
+@import '../../shared/styles/constants.scss';
+
+.promo-layout {
+    background-image: url('../../../public/images/promo_background.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.promo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-height: 810px;
+    padding: 0 80px;
+
+    @media screen and (max-width: 768px) {
+        padding: 0 20px;
+    }
+
+    &__title-area {
+        max-width: 898px;
+        margin-bottom: 108px;
+
+        h2 {
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 1.12;
+            margin-bottom: 36px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 42px;
+            }
+
+            @media screen and (max-width: 480px) {
+                font-size: 22px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.55;
+
+            @media screen and (max-width: 768px) {
+            }
+
+            @media screen and (max-width: 480px) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__register-area {
+        max-width: 404px;
+        width: 100%;
+        min-height: 168px;
+        background-color: white;
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+        padding: 36px;
+
+        h2 {
+            font-size: 24px;
+            line-height: 1;
+            text-align: center;
+        }
+    }
+
+    &__button-area {
+        display: flex;
+        gap: 18px;
+        color: white;
+    }
+
+    &__finde-work-btn {
+        width: 157px;
+        height: 48px;
+        border-radius: 100px;
+        background-color: $M_Blue;
+    }
+
+    &__finde-worker-btn {
+        width: 157px;
+        height: 48px;
+        border-radius: 100px;
+        background-color: black;
+    }
+}

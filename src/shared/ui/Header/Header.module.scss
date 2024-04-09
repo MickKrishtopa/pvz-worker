@@ -1,0 +1,30 @@
+@import '../../../shared/styles/constants.scss';
+
+.header {
+    width: 100%;
+    min-height: 32px;
+    padding: 48px 80px;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+        padding: 18px 20px;
+    }
+
+    &__logo {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+
+        color: $M_Blue;
+    }
+
+    &__login-btn {
+        width: 89px;
+        height: 32px;
+        border-radius: 16px;
+        background-color: $Black;
+        color: white;
+    }
+}

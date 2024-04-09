@@ -1,23 +1,26 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Mulish } from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
+import { Providers } from './providers';
+import './globals.css';
+
+const mulish = Mulish({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "ПВЗ",
-  description: "Ресурс для поиска работы в ПВЗ",
+    title: 'ПВЗ',
+    description: 'Ресурс для поиска работы в ПВЗ',
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body className={mulish.className}>
+                <Providers>{children}</Providers>
+            </body>
+        </html>
+    );
 }
-
