@@ -1,0 +1,24 @@
+@import '../../shared/styles/constants.scss';
+
+.register-layout {
+    background-image: url('../../../public/images/promo_background.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // z-index: -1;
+
+    // &:after {
+    //     content: '';
+    //     position: fixed; /* Фиксируем на одном месте */
+    //     left: 0;
+    //     right: 0; /* Вся ширина */
+    //     top: 0;
+    //     bottom: 0; /* Вся высота */
+    //     z-index: -1; /* Фон ниже текста */
+    //     background-color: rgba(0, 13, 46, 0.4);
+    // }
+}
